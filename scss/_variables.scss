@@ -1,0 +1,42 @@
+/* MAPS */
+$redes: (
+    facebook: #3a5795,
+    instagram: #ff7300,
+    twitter: #55acee,
+    whatsapp: #0dcf0d
+);
+/* Creamos bucle para usar los valores del mapa */
+@each $red, $color in $redes {
+    .#{$red} {
+        background-color: $color;
+        width: 30px;
+        border-radius: 20%;
+    }
+}
+/* Definimos un mapa para luego aplicar map-get() */
+$estilos:(
+    tamaño: 100%,
+    cfondo: #093A3E,
+    disp: flex,
+    just: space-around
+);
+/* map-get() */
+.footer{
+    width: map-get($estilos, tamaño);
+    background-color: map-get($estilos, cfondo);
+    display: map-get($estilos, disp);
+    justify-content: map-get($estilos, just );
+}
+/* aplicamos @extend */
+.parrafoEspecial{
+    @extend .parrafo;
+    background-color: #a4a2a2;
+}
+/* aplicamos mixins */
+@mixin sizes ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+img{
+    @include sizes(100%, 100%)
+}

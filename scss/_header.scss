@@ -1,0 +1,42 @@
+.header{
+    background-color: rgb(34, 38, 62);
+    width: 100%;
+    padding: 44px 0px 44px 0px;
+    margin: 0px;
+    display: flex;
+    position: fixed;
+    opacity: 0.9;
+    margin-top: -150px;
+    z-index: 1;
+}
+.headerImg{
+    width: 146px;
+    height: 146px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.navegacion{
+    background-color: rgb(34, 38, 62);
+}
+.menu li{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    padding: 0 2px;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 50%;
+}
+.menu li:hover ul{
+    display: block;
+}
+.submenu{
+    display: none;
+    position: absolute;
+}
+.submenu li{
+    display: block;
+    background-color: rgb(34, 38, 62);
+}
