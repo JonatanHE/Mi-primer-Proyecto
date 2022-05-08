@@ -1,6 +1,7 @@
 {
-  "name": "clear",
+  "name": "mi-primer-proyecto",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,17 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JonatanHE/Mi-primer-proyecto.git"
+    "url": "git+https://github.com/JonatanHE/Mi-primer-Proyecto.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JonatanHE/Mi-primer-proyecto/issues"
+    "url": "https://github.com/JonatanHE/Mi-primer-Proyecto/issues"
   },
-  "homepage": "https://github.com/JonatanHE/Mi-primer-proyecto#readme",
+  "homepage": "https://github.com/JonatanHE/Mi-primer-Proyecto#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
-  },
-  "description": ""
+    "nodemon": "^2.0.16"
+  }
 }

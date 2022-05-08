@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--fuente de caracteres especiales-->
     <link rel="stylesheet" href="estilos/styles.css"> <!--Acceso a la ruta de estilo-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="icon" href="../imagenes/Las Amelias.ico">
 </head>
 <body><!--Todo lo que vemos en el navegador-->
     <div class="container-fluid">
@@ -23,12 +23,15 @@
         </a>
         <div class="row col-12">
             <header class="header"><!--Encabezado de pagína-->
-                <img src="imagenes/Las Amelias.jpeg" alt="logolasamelias" title="Las Amelias" class="headerImg"> <!--Logo de la empresa-->
                 <nav class="navegacion"> <!--Menu principal-->
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
                     <ul class="menu"> <!--Lista desordenada-->
-                        <li><a href="index.html">Inicio</a> </li> <!--Enlace a la pagina de inicio-->  
                         <li><a href="paginas/habitaciones.html">Habitaciones</a></li><!--Enlace a la página de Habitaciones-->
                         <li><a href="paginas/servicios.html">Servicios</a></li><!--Enlace a la página de Servicios-->
+                        <li><a href="index.html"><img src="imagenes/Las Amelias.png" alt="logolasamelias" title="Las Amelias" class="headerImg"></a></li>
                         <li><a href="paginas/galeria.html">Galeria</a></li><!--Enlace a la página de Galeria-->
                         <li><a href="paginas/contacto.html">Contacto</a></li><!--Enlace a la página de Contacto-->
                     </ul>
@@ -47,22 +50,22 @@
                     <div class="carousel-item active">
                         <img src="imagenes/living.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="frase">Imagen 1</h5>
-                            <p class="frase">Frase 1</p>
+                            <h5 class="frase"></h5>
+                            <p class="frase"></p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="imagenes/dormitorio.jfif" class="d-block w-100" alt="...">
+                        <img src="imagenes/habitacion.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="frase">Imagen 2</h5>
-                            <p class="frase">Frase 2.</p>
+                            <h5 class="frase"></h5>
+                            <p class="frase"></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="imagenes/desayuno.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="frase">Imagen 3</h5>
-                            <p class="frase">Frase 3</p>
+                            <h5 class="frase"></h5>
+                            <p class="frase"></p>
                         </div>
                     </div>
                 </div>
@@ -81,23 +84,23 @@
                 <p class="parrafo">Las Amelias Apart Hotel ofrece alojamiento a sólo 1 kilómetros del Aeropuerto de Ezeiza. Las habitaciones cuentan con desayuno incluido, aire acondicionado frio / calor, TV de pantalla plana, caja fuerte, minibar y cava de vinos. Todas las habitaciones disponen de baño privado con artículos de aseo gratuitos y secador de pelo.</p>
             </main>
         <footer class="footer row"><!--Pie de página-->
-            <section class="cotactoSec col-sm-12 col-md-6">
+            <section class="contactoSec col-sm-12 col-md-8">
                 <h2 class="tituloFooter">Contacto</h2>
                 <div class="containerFooter">
                     <div class="contactoFooter">
-                        <p><a href="#">Calle de prueba 123, Ezeiza</a></p><!--Informacion a modo de ejemplo-->
-                        <p><a href="#">lasameliasaparthotel@gmail.com</a></p><!--Informacion a modo de ejemplo-->
+                        <p><a href="https://goo.gl/maps/1zFiToonwZhpFXxK7"><i class="fa fa-location-arrow iconFooter"></i>: 25 de Mayo 1035, Ezeiza, Buenos Aires</a></p>
+                        <p><a href="mailto:lasameliasaparthotel@gmail.com"><i class="fa fa-envelope iconFooter"></i>: lasameliasaparthotel@gmail.com</a></p>
                     </div>
                     <div class="contactoFooter">
-                        <p><a href="#">+541234567891</a></p><!--Informacion a modo de ejemplo-->
-                        <p><a href="#">+541234567891</a></p><!--Informacion a modo de ejemplo-->
+                        <p><a href="tel:+541138621124"><i class="fa fa-phone iconFooter"></i>: +541138621124</a></p>
+                        <p><a href="https://api.whatsapp.com/send?phone=+5491138621124"><i class="fab fa-whatsapp iconFooter"></i>: +541138621124</a></p>
                     </div>
                 </div>
             </section>
-            <section class="compartirSec col-sm-12 col-md-6">
+            <section class="compartirSec col-sm-12 col-md-4">
                 <h2 class="tituloFooter">Compartir en:</h2>
                 <div class="contactoFooter">
-                    <div clas="redSocial">
+                    <div class="redSocial">
                         <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter twitter"></i></a>
