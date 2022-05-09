@@ -1,14 +1,14 @@
-header{
-    background-color: rgb(52, 53, 58);
-    width: 100%;
-    padding: 0px 0px 0px 250px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    opacity: 0.7;
-    z-index: 1;
+nav{
+        background-color: rgb(52, 53, 58);
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        opacity: 0.7;
+        z-index: 1;
 }
 .headerImg{
     width: 146px;
@@ -16,26 +16,68 @@ header{
     top: 0%;
     right: 0%;
 }
-.navegacion{
-    background-color: rgb(52, 53, 58);
+nav ul{
+    margin-right: 20px;
 }
-.menu li{
+nav ul li{
     display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.checkbtn{
     font-size: 30px;
-    padding: 0 21px;
+    color: #fff;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    //display: none;
 }
-.menu li a{
-    text-decoration: none;
-    font-size: 50%;
-}
-.menu li:hover ul{
-    display: block;
-}
-.submenu{
+#check{
     display: none;
-    position: absolute;
 }
-.submenu li{
-    display: block;
-    background-color: rgb(34, 38, 62);
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+    /* .checkbtn{
+        position: relative;    
+    } */
+}
+@media (max-width: 870px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+    }
 }
