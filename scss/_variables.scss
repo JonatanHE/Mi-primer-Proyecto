@@ -27,11 +27,6 @@ $estilos:(
     display: map-get($estilos, disp);
     justify-content: map-get($estilos, just );
 }
-/* aplicamos @extend */
-.parrafoEspecial{
-    @extend .parrafo;
-    background-color: #a4a2a2;
-}
 /* aplicamos mixins */
 @mixin sizes ($ancho, $alto){
     width: $ancho;

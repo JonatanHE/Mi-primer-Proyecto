@@ -1,5 +1,5 @@
 .containerServicios{
-    padding: 50px 50px 30px 30px;
+    padding: 85px 50px 30px 30px;
     color: black;
     font-size: 40px;
 }
@@ -13,5 +13,9 @@
     font-size: 15px;
 }
 .reserva{
-    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
 }

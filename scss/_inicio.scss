@@ -18,3 +18,45 @@ main h1{
 .carousel-control-next{
     width: 3%;
 }
+.carousel-control-prev{
+    width: 3%;
+}
+.carousel{
+    padding-right: 0px;
+}
+.containerReserva{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5%;
+    margin: 3%;
+    background-color: gray;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.fechaDesde{
+    border-radius: 10px;
+    width: 80%;
+}
+.fechaHasta{
+    border-radius: 10px;
+    width: 80%;
+}
+.selectAdultos{
+    border-radius: 10px;
+    width: 80%;
+}
+.estiloFuenteReserva{
+    font-size: 180%;
+    color: black;
+}
+.btnReserva{
+    width: 20%;
+    height: 130%;
+    border-radius: 10px;
+}
+.reserva{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}

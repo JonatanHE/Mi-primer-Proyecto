@@ -25,7 +25,16 @@ html {
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 1px 10px black;
-  z-index: 100; }
+  z-index: 1; }
+
+.headerImg1 {
+  position: fixed;
+  width: 146px;
+  height: 70px;
+  top: 0%;
+  right: 0%;
+  z-index: 1;
+  display: none; }
 
 /* MAPS */
 /* Creamos bucle para usar los valores del mapa */
@@ -57,17 +66,15 @@ html {
   display: flex;
   justify-content: space-around; }
 
-/* aplicamos @extend */
-.parrafoEspecial {
-  background-color: #a4a2a2; }
-
 /* aplicamos mixins */
 img {
   width: 100%;
   height: 100%; }
 
 .containerContacto {
-  padding: 5% 5%; }
+  padding: 85px 50px 30px 30px;
+  font-size: 40px;
+  font-family: century gothic; }
 
 .mapa {
   width: 100%;
@@ -137,7 +144,7 @@ a i {
   padding: 20px 0 0 40px; }
 
 .iconFooter {
-  font-size: 20px; }
+  font-size: 14px; }
 
 .whatsapp {
   margin-left: 4px; }
@@ -152,12 +159,12 @@ a i {
   margin-left: 4px; }
 
 .containerGaleria {
-  padding: 50px 150px 30px 50px;
+  padding: 85px 150px 30px 50px;
   color: black;
-  font-size: 320%; }
+  font-size: 40px;
+  font-family: century gothic; }
 
 .menuGaleria {
-  background-color: #d1d1a4;
   display: flex; }
 
 .imagenHabitaciones {
@@ -171,8 +178,9 @@ a i {
   padding: 15px 0 15px 15px; }
 
 .containerHabitaciones {
-  padding: 50px 50px 30px 30px;
-  font-size: 35px; }
+  padding: 85px 50px 30px 30px;
+  font-size: 40px;
+  font-family: century gothic; }
 
 .tituloHabitaciones {
   font-family: century gothic;
@@ -190,6 +198,12 @@ a i {
 .menuHab {
   padding: 10px; }
 
+.imagen1 {
+  padding: 2px; }
+
+.imagen2 {
+  padding: 2px; }
+
 nav {
   background-color: #34353a;
   width: 100%;
@@ -200,7 +214,7 @@ nav {
   align-items: center;
   position: fixed;
   opacity: 0.7;
-  z-index: 1; }
+  z-index: 2; }
 
 .headerImg {
   width: 146px;
@@ -235,6 +249,9 @@ nav ul li a {
 #check {
   display: none; }
 
+.headerInicio {
+  display: none; }
+
 .contenido {
   color: white;
   padding: 10px;
@@ -247,13 +264,55 @@ main h1 {
   font-size: 26px;
   margin: 10px; }
 
-.parrafo, .parrafoEspecial {
+.parrafo {
   font-family: century gothic;
   font-size: 14px;
   text-align: justify; }
 
 .carousel-control-next {
   width: 3%; }
+
+.carousel-control-prev {
+  width: 3%; }
+
+.carousel {
+  padding-right: 0px; }
+
+.containerReserva {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5%;
+  margin: 3%;
+  background-color: gray;
+  opacity: 0.8;
+  border-radius: 10px; }
+
+.fechaDesde {
+  border-radius: 10px;
+  width: 80%; }
+
+.fechaHasta {
+  border-radius: 10px;
+  width: 80%; }
+
+.selectAdultos {
+  border-radius: 10px;
+  width: 80%; }
+
+.estiloFuenteReserva {
+  font-size: 180%;
+  color: black; }
+
+.btnReserva {
+  width: 20%;
+  height: 130%;
+  border-radius: 10px; }
+
+.reserva {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; }
 
 @media screen and (max-width: 425px) {
   .menu {
@@ -286,7 +345,13 @@ main h1 {
     height: 44px;
     line-height: 44px;
     bottom: 10px;
-    right: 41px; } }
+    right: 41px; }
+  .headerImg1 {
+    display: flex; }
+  .headerInicio {
+    display: block; }
+  .headerImg {
+    display: none; } }
 
 @media (max-width: 870px) {
   .checkbtn {
@@ -305,7 +370,8 @@ main h1 {
     margin: 0;
     line-height: 30px; }
   nav ul li a {
-    font-size: 15px; }
+    font-size: 15px;
+    padding: 0; }
   li a:hover, li a.active {
     background: none;
     color: blue;
@@ -315,10 +381,19 @@ main h1 {
   .contactoFooter {
     font-size: 16px; }
   #check:checked ~ ul {
-    left: 0; } }
+    left: 0; }
+  .headerImg1 {
+    display: flex;
+    left: 0px;
+    top: 7px; }
+  .headerImg {
+    display: none; }
+  .headerInicio {
+    display: inline;
+    justify-content: center; } }
 
 .containerServicios {
-  padding: 50px 50px 30px 30px;
+  padding: 85px 50px 30px 30px;
   color: black;
   font-size: 40px; }
 
@@ -332,4 +407,8 @@ main h1 {
   font-size: 15px; }
 
 .reserva {
-  justify-content: center; }
+  display: flex;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px; }

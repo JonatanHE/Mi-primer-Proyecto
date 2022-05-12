@@ -24,6 +24,7 @@
         <div class="row col-12">
             <header class="header"><!--Encabezado de pagína-->
                 <nav class="navegacion"> <!--Menu principal-->
+                    <a href="index.html"><img src="imagenes/Las Amelias.png" alt="logolasamelias" title="Las Amelias" class="headerImg1"></a>
                     <input type="checkbox" id="check">
                     <label for="check" class="checkbtn">
                         <i class="fas fa-bars"></i>
@@ -31,7 +32,10 @@
                     <ul class="menu"> <!--Lista desordenada-->
                         <li><a href="paginas/habitaciones.html">Habitaciones</a></li><!--Enlace a la página de Habitaciones-->
                         <li><a href="paginas/servicios.html">Servicios</a></li><!--Enlace a la página de Servicios-->
-                        <li><a href="index.html"><img src="imagenes/Las Amelias.png" alt="logolasamelias" title="Las Amelias" class="headerImg"></a></li>
+                        <li>
+                            <a href="index.html"><img src="imagenes/Las Amelias.png" alt="logolasamelias" title="Las Amelias" class="headerImg"></a>
+                            <a href="index.html" class="headerInicio">Inicio</a>
+                        </li>
                         <li><a href="paginas/galeria.html">Galeria</a></li><!--Enlace a la página de Galeria-->
                         <li><a href="paginas/contacto.html">Contacto</a></li><!--Enlace a la página de Contacto-->
                     </ul>
@@ -79,10 +83,52 @@
                 </button>
             </div>
         </div>
-            <main class="contenido row col-12">
-                <h1>Las Amelias Apart Hotel</h1> <!--Titulo principal-->
-                <p class="parrafo">Las Amelias Apart Hotel ofrece alojamiento a sólo 1 kilómetros del Aeropuerto de Ezeiza. Las habitaciones cuentan con desayuno incluido, aire acondicionado frio / calor, TV de pantalla plana, caja fuerte, minibar y cava de vinos. Todas las habitaciones disponen de baño privado con artículos de aseo gratuitos y secador de pelo.</p>
-            </main>
+        <div class="containerReserva">
+            <form>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="estiloFuenteReserva">Fecha de Check-In</label>
+                            <input type="date" class="fechaDesde">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="estiloFuenteReserva">Fecha de Check-Out</label>
+                            <input type="date" class="fechaHasta">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="estiloFuenteReserva">Adultos</label>
+                            <select name="adultos" id="adults">
+                                <option value="1" selected="">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">    
+                            <label class="estiloFuenteReserva">Niños</label>
+                            <select class="estiloNiños" name="ninios" id="children">
+                                <option value="0" selected="">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>  
+                        <div class="col-md-12 col-sm-12 reserva">
+                            <button type="submit" class="btnReserva">Reservar</button>
+                        </div>
+                    </div>
+                </div>	
+            </form>
+        </div>
+        <main class="contenido row col-12">
+            <h1>Las Amelias Apart Hotel</h1> <!--Titulo principal-->
+            <p class="parrafo">Las Amelias Apart Hotel ofrece alojamiento a sólo 1 kilómetros del Aeropuerto de Ezeiza. Las habitaciones cuentan con desayuno incluido, aire acondicionado frio / calor, TV de pantalla plana, caja fuerte, minibar y cava de vinos. Todas las habitaciones disponen de baño privado con artículos de aseo gratuitos y secador de pelo.</p>
+        </main>
         <footer class="footer row"><!--Pie de página-->
             <section class="contactoSec col-sm-12 col-md-8">
                 <h2 class="tituloFooter">Contacto</h2>
