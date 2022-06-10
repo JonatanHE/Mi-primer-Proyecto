@@ -351,7 +351,9 @@ main h1 {
   .headerInicio {
     display: block; }
   .headerImg {
-    display: none; } }
+    display: none; }
+  .btnReserva {
+    width: 30%; } }
 
 @media (max-width: 870px) {
   .checkbtn {
